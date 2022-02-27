@@ -20,6 +20,9 @@ const url=`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`
 const displaySearchResults = meals => {
     const searchResult = document.getElementById('searchresults');
 
+    searchResult.textContent = "";
+   
+
     meals.forEach(meal => {
         console.log(meal);
         const div = document.createElement('div');
